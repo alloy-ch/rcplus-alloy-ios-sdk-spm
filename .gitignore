@@ -1,0 +1,43 @@
+# Logs
+*.log
+# Temporary files
+*.tmp
+*~
+
+*.bak
+# Environment files (containing secrets, API keys, credentials)
+.env
+*.env
+.env.*
+
+# Local configuration that shouldn't be shared
+*.local
+
+### Swift ###
+# swift specific files
+
+build/
+.build/
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+
+timeline.xctimeline
+Packages/
+*.xcarchive
+Dependencies/
+.accio/
+
+*.o
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+### Swift_package_manager ###
+# swift_package_manager package manager specific files
+
+.build/
+Packages/
+Package.resolved
+.swiftpm/
+.build-cache/
