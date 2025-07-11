@@ -30,7 +30,7 @@ let package = Package(
       .binaryTarget(
           name: "AlloyXCFramework",
           url: "https://github.com/alloy-ch/rcplus-alloy-ios-sdk-spm/releases/download/v0.0.1/Alloy-0.0.1.xcframework.zip",
-          checksum: "d2652775323de65c48c1f5537575b1d4ac06347243631ce74ccd35d99e613ea2"
+          checksum: "f3209b189b83f3c594b75264e31635af05a951357116df968cdff9556eb22f90"
       ),
     ],
     swiftLanguageVersions: [.v5]
