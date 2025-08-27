@@ -10,7 +10,7 @@ Add the following to your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/alloy-ch/rcplus-alloy-ios-sdk-spm", from: "0.0.3")
+    .package(url: "https://github.com/alloy-ch/rcplus-alloy-ios-sdk-spm", from: "0.0.4")
 ]
 ```
 
@@ -30,7 +30,7 @@ import AlloySDK
 
 ## Current Version
 
-**v0.0.3**
+**v0.0.4**
 
 ## License
 

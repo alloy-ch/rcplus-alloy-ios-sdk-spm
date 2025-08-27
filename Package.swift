@@ -3,15 +3,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "Alloy",
+    name: "AlloySDK",
     platforms: [
         .iOS(.v14),
     ],
     products: [
         .library(
-            name: "Alloy",
+            name: "AlloySDK",
             targets: [
-                "Alloy"
+                "AlloyTarget"
             ]
         )
     ],
@@ -20,17 +20,17 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "Alloy",
+            name: "AlloyTarget",
             dependencies: [
                 .product(name: "SnowplowTracker", package: "snowplow-ios-tracker"),
-                .target(name: "AlloyXCFramework")
+                .target(name: "AlloySDK")
             ],
             path: "Sources"
         ),
       .binaryTarget(
-          name: "AlloyXCFramework",
-          url: "https://github.com/alloy-ch/rcplus-alloy-ios-sdk-spm/releases/download/v0.0.3/Alloy-0.0.3.xcframework.zip",
-          checksum: "b65b0c3010504f93ae212b677cca2418c60a054889abadc1ba6bfe7e6af2b809"
+          name: "AlloySDK",
+          url: "https://github.com/alloy-ch/rcplus-alloy-ios-sdk-spm/releases/download/v0.0.4/Alloy-0.0.4.xcframework.zip",
+          checksum: "165b361bb6e400ff4703352addc5da9e96db39b9beeae1f983f896dc23d4528d"
       ),
     ],
     swiftLanguageVersions: [.v5]
