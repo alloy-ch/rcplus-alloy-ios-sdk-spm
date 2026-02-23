@@ -15,22 +15,19 @@ let package = Package(
             ]
         )
     ],
-    dependencies: [
-        .package(url: "https://github.com/snowplow/snowplow-ios-tracker", exact: "6.2.1")
-    ],
+    dependencies: [],
     targets: [
         .target(
             name: "AlloyTarget",
             dependencies: [
-                .product(name: "SnowplowTracker", package: "snowplow-ios-tracker"),
                 .target(name: "AlloySDK")
             ],
             path: "Sources"
         ),
       .binaryTarget(
           name: "AlloySDK",
-          url: "https://github.com/alloy-ch/rcplus-alloy-ios-sdk-spm/releases/download/v0.1.0/Alloy-0.1.0.xcframework.zip",
-          checksum: "d7249d55fec25af6037f1cfeac86100704843219cec3d6a498b578a2b0f58aa8"
+          url: "https://github.com/alloy-ch/rcplus-alloy-ios-sdk-spm/releases/download/v0.1.2/Alloy-0.1.2.xcframework.zip",
+          checksum: "a5a35a01e8695d58cd4d272158b760ff8617be75d3fade1b61629cddadc85d03"
       ),
     ],
     swiftLanguageVersions: [.v5]
