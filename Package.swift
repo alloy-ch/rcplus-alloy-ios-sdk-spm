@@ -26,8 +26,8 @@ let package = Package(
         ),
       .binaryTarget(
           name: "AlloySDK",
-          url: "https://github.com/alloy-ch/rcplus-alloy-ios-sdk-spm/releases/download/v0.1.2/Alloy-0.1.2.xcframework.zip",
-          checksum: "a5a35a01e8695d58cd4d272158b760ff8617be75d3fade1b61629cddadc85d03"
+          url: "https://github.com/alloy-ch/rcplus-alloy-ios-sdk-spm/releases/download/v0.2.0/Alloy-0.2.0.xcframework.zip",
+          checksum: "bbe3d88d79b83591489e409a683b82c8ce1bc421f9f2bfbcc0885770233fcb98"
       ),
     ],
     swiftLanguageVersions: [.v5]
